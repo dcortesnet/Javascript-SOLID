@@ -1,4 +1,4 @@
-// Case to improve ❌
+// Case improved and apply the principle ✅
 
 class Animal {
   eat() {
@@ -7,14 +7,10 @@ class Animal {
 }
 
 class Dog extends Animal {
-  eat() {
-    console.log('The dog is eating food');
-  }
-
   bark() {
     console.log('The dog is barking');
   }
 }
 
 const dog = new Dog();
-dog.eat(); // The dog is eating food
+dog.eat();  // The animal is eating

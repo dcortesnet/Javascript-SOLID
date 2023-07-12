@@ -1,4 +1,4 @@
-// Case improved and apply the principle
+// Case improved and apply the principle ✅
 
 class AuthenticationService {
   constructor() {

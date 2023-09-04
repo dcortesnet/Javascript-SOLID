@@ -6,11 +6,17 @@ class Animal {
   }
 }
 
-class Dog extends Animal {
-  bark() {
-    console.log('The dog is barking');
+class Bird extends Animal {
+  fly() {
+    console.log('The bird is flying');
   }
 }
 
-const dog = new Dog();
-dog.eat();  // The animal is eating
+class Ostrich extends Animal { }
+
+const bird = new Bird();
+bird.eat();
+bird.fly();
+
+const ostrich = new Ostrich();
+ostrich.eat();

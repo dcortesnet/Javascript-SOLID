@@ -6,15 +6,18 @@ class Animal {
   }
 }
 
-class Dog extends Animal {
-  eat() {
-    console.log('The dog is eating food');
-  }
-
-  bark() {
-    console.log('The dog is barking');
+class Bird extends Animal {
+  fly() {
+    console.log('The bird is flying');
   }
 }
 
-const dog = new Dog();
-dog.eat(); // The dog is eating food
+class Ostrich extends Bird {
+  fly() {
+    throw new Error('Ostriches cannot fly');
+  }
+}
+
+const bird = new Ostrich();
+bird.eat();
+bird.fly(); // This breaks the Liskov substitution principle.
